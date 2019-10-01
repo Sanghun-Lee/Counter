@@ -11,16 +11,22 @@ class Counter extends Component {
     onSetColor: PropTypes.func
   };
 
+  // onIncrement는 props로 CounterContainer.js에 있는
+
   static defaultProps = {
     number: 0,
     color: "black",
-    onIncrement: () => alert("increment"),
+    onIncrement: function aa() {
+      return alert("increment");
+    },
     onDecrement: () => alert("decrement"),
     onSetColor: () => alert("onSetColor")
   };
 
   render() {
     const color = this.props.color;
+    // const props = this.props;
+    // console.log(props);
     return (
       <View style={styles.container}>
         <View style={[styles.textView, { backgroundColor: color }]}>

@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 
 import Counter from "./src/components/Counter";
+import CounterContainer from "./src/containers/CounterContainer";
 
 /*
  * Store만들기
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <View style={styles.container}>
-        <Counter />
+        <CounterContainer />
       </View>
     </Provider>
   );

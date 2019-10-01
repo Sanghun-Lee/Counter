@@ -28,6 +28,8 @@ const initialState = {
     기존 상태 값에 원하는 값을 덮어쓴 새로운 객체를 만들어서 반환해야합니다.
 */
 
+// 현재 state와 action을 받는다.
+// 그리고 리듀서 함수 (여기서는 count)가 리턴하는 값이 새로운 state가 된다.
 function counter(state = initialState, action) {
   switch (action.type) {
     case types.INCREMENT:
