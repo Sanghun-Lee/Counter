@@ -57,7 +57,7 @@ import number from "./number";
 import color from "./color";
 
 // * combineReducer로 number, color의 서브 리듀서를 합칠 수 있다.
-import { combineReducer } from "redux";
+import { combineReducers } from "redux";
 
 /*
  * 서브 리듀서를 하나로 합친다.
@@ -75,7 +75,7 @@ import { combineReducer } from "redux";
  * 으로 만들어집니다.
  */
 
-const reducers = combineReducer({
+const reducers = combineReducers({
   numberData: number,
   colorData: color
 });
