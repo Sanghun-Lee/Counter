@@ -13,8 +13,8 @@ import { getRandomColor } from "../utils";
 // store안의 state값을 props로 연결해 줍니다.
 // * 상태를 연결시킬때는 state를
 const mapStateToProps = state => ({
-  color: state.color,
-  number: state.number
+  color: state.colorData.color,
+  number: state.numberData.number
 });
 
 /*

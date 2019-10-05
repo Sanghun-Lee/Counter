@@ -25,3 +25,20 @@ export const setColor = color => ({
   type: types.SET_COLOR,
   color
 });
+
+/*
+ * 액션을 리듀서에 전달하기 위해서는 dispatch함수를 이용해야 한다.
+ * dispatch(액션 객체)
+ *
+ * action생성자가 없을 때는
+ * dispatch({type : 'INCREMENT'});
+ * 이런식으로 액션객체를 dispatch함수 호출시에 바로 던져준다.
+ * --------------------------------------------------------
+ * 하지만 dispatch시에 만드는것 보다는 따로 파일로 만들어주는편이 좋다.
+ * export const INCREMENT = 'INCREMENT';
+ * export const increment = () => ({type : types.INCREMENT});
+ * dispatch(actions.increment());
+ *
+ * // import * as types from './ActionTypes';
+ * // import * as actions from './actions';
+ */
